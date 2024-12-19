@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>About</title>
+    <!-- <script>
+            function loadaboutus(){
+            document.getElementById("regFrame").src="aboutus.html"
+        }
+    </script> -->
+    <style>
+      #regFrame {
+          width: 100%;
+          height: 100vh;
+          border: none;
+      }
+  </style>
+   <script>
+    function loadaboutus() {
+        document.getElementById("regFrame").src = "aboutus.html";
+        document.getElementById("regFrame").onload = function () {
+            // Ensure AOS is initialized in the iframe
+            this.contentWindow.AOS.init();
+            this.contentWindow.AOS.refresh();
+        };
+    }
+</script>
+
+
+</head>
+<body>
+    <section class="header">
+        <div class="navbar flex">
+            <a href="web2.html" class="hover-link">Home</a>
+            <a href="#" class="hover-link">Browse Recipes</a>
+            <div class="dropdown">
+                <button class="dropbtn">Categories
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Breakfast</a>
+                  <a href="#">Lunch</a>
+                  <a href="#">Dinner</a>
+                  <a href="#">Snacks</a>
+                  <a href="#">Desserts</a>
+                  <a href="#">Beverages</a>
+                </div>
+              </div> 
+            <a href="about.html" class="hover-link">About Us</a>
+            <!-- <a href="#" onclick="loadsignin()" class="hover-link secondary-button">Sign in</a>
+            <a href="#" onclick="loadsignup()" class="hover-link primary-button" >Sign up</a> -->
+        </div>
+    </section>
+
+
+    <div class="about">
+
+      <div class="about-us flex" >
+        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+        <a href="#" onclick="loadaboutus()" class="secondary-button">Load More <i class="fa-solid fa-right-long"></i></a>
+      </div>
+    </div>
+
+    <div class="about-all ab" >
+      <iframe id="regFrame" name="regFrame" frameborder="0" width="100%" height="100%"></iframe>
+    </div>
+
+
+    <footer>
+      <div class="container2 flex footer-container" >
+          <a href="#" class="company-logo">
+              <img class="comp" src="a13.png" alt="" height="200px" width="200px">
+          </a>
+           
+          <div class="link-column flex">
+              <h4>Product</h4>
+              <a href="#" class="hover-link flex">Overview</a>
+              <a href="#" class="hover-link">Pricing</a>
+              <a href="#" class="hover-link">Usability</a>
+              <a href="#" class="hover-link">Customer</a>
+              <a href="#" class="hover-link">Status Page</a>
+          </div>
+          <div class="link-column flex">
+              <h4>Product</h4>
+              <a href="#" class="hover-link">Overview</a>
+              <a href="#" class="hover-link">Pricing</a>
+              <a href="#" class="hover-link">Usability</a>
+              <a href="#" class="hover-link">Customer</a>
+              <a href="#" class="hover-link">Status Page</a>
+          </div>
+          <div class="link-column flex">
+              <h4>Product</h4>
+              <a href="#" class="hover-link">Overview</a>
+              <a href="#" class="hover-link">Pricing</a>
+              <a href="#" class="hover-link">Usability</a>
+              <a href="#" class="hover-link">Customer</a>
+              <a href="#" class="hover-link">Status Page</a>
+          </div>
+      </div>
+  </footer>
+
+
+
+  <div class="subfooter">
+      <div class="container2 flex sub-footer-container">
+          <a href="#" class="hover-link">Privacy</a>
+          <a href="#" class="hover-link">Policy</a>
+          <a href="#" class="hover-link">Security Information</a>
+          <a href="#" class="hover-link"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="hover-link"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="hover-link"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="hover-link"><i class="fa-brands fa-square-x-twitter"></i></a>
+      </div>
+  </div>
+
+
+  <script src="https://kit.fontawesome.com/05ac7aeb8e.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    
+</body>
+</html>

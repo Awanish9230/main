@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 3rem;
+    margin-left: 150px;
+}
+h2{
+    font-size: 2rem;
+    margin-left: 150px;
+}
+h3{
+    font-size: 2.2rem;
+    margin-left: 150px;
+}
+h4{
+    font-size: 1.2rem;
+    margin-left: 150px;
+}
+.container{
+    max-width: 1210px;
+    margin-inline: auto;
+    padding-inline:20px;
+    background-color: rgba(209, 215, 219, 0);
+}
+.container-child{
+    max-width: 900px;
+    margin-inline: auto;
+    padding-top: 40px;
+    background-color: rgba(25, 110, 167, 0);
+}
+.img {
+    height: 400px;
+    width: 400px;
+    margin-left: 150px;
+}
+.img img{
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px rgba(26, 21, 14, 0.89);
+}
+.ingredient{
+    margin-top: 100px;
+}
+.ingredient ul li{
+    list-style: none;
+}

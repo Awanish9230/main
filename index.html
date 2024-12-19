@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Recipe Finder</title>
+    <script>
+        function loadsignin(){
+            document.getElementById("regFrame").src="login.html"
+        }
+        function loadsignup(){
+            document.getElementById("regFrame").src="signup.html"
+        }
+        function loadabout(){
+            document.getElementById("regFrame").src="ab.html"
+        }
+    </script>
+
+</head>
+<body>
+    <section class="header">
+        <div class="navbar flex">
+            <div class="navleft flex">
+                <a href="web2.html" class="hover-link">Home</a>
+     
+                <div class="dropdown">
+                    <button class="dropbtn">Categories
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">Breakfast</a>
+                      <a href="#">Lunch</a>
+                      <a href="#">Dinner</a>
+                      <a href="#">Snacks</a>
+                      <a href="#">Desserts</a>
+                      <a href="#">Beverages</a>
+                    </div>
+                </div> 
+    
+                <a href="about.html"  class="hover-link">About Us</a>
+    
+    
+                <div class="dropdown">
+                    <button class="dropbtn">Browse Recipe
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">Cuisine Types</a>
+                      <a href="#">Meal Types</a>
+                      <a href="#">Dietary Preferences</a>
+                      <a href="#">Ingredients-Based Recipes</a>
+                    </div>
+    
+                </div>
+
+            </div>
+            
+            <div class="loginpage flex">
+                <a href="#" onclick="loadsignin()" class="hover-link secondary-button">Sign in</a>
+                <a href="#" onclick="loadsignup()" class="hover-link primary-button" >Sign up</a>
+            </div>
+              
+        </div>
+    </section>
+
+
+
+    <section class="search-bar">
+
+        <div class="search flex">
+            <div class="label3">
+                <h6 >SEARCH</h6>
+                <h1 class="heading">Find food with the given input.</h1>
+
+                <div class="search-section search-input-container">
+                    <input type="text" id="searchInput" class="search-input" placeholder="onion potato" />
+                    <button onclick="search()" class="search-button">Search</button>
+                </div>
+
+               <div id="result"></div>
+           </div>
+
+            <div class="label4" >
+                <iframe id="regFrame" name="regFrame" frameborder="0" width="100%" height="500px"></iframe>
+            </div> 
+
+        </div>
+    </section>
+    
+
+
+    <section class="special-dishes">
+        <div class="aaa">
+        <div class="container">
+            <div class="label">
+                <h1>Our Special Recipe Dishes</h1>
+            </div>
+            <div class="dishes flex" >
+                <div class="dish-img"  data-aos="slide-right">
+                    <img class="dish" src="a2.jpg" alt="error" height="300px" width="210px">
+                
+                </div>
+                <div class="dish-img" data-aos="slide-left">
+                    <img class="dish" src="a3.jpg" alt="error" height="300px" width="210px">
+                 </div> 
+                 <div class="dish-img" data-aos="slide-right">
+                    <img class="dish" src="a4.jpg" alt="error" height="300px" width="210px">
+                 </div>  
+                 <div class="dish-img" data-aos="slide-left">
+                    <img class="dish" src="a5.jpg" alt="error" height="300px" width="210px">
+                 </div> 
+               
+                </div>
+            </div>  
+    </section>
+
+
+
+    <section class="trending">
+        <div class="container" >
+            <div class="label"><h1>Trending Now</h1></div>
+            <div class="top-search flex">
+                <div class="items-img-name " data-aos="slide-right">
+                    <img src="a6.jpg" alt="" height="280px" width="210px" >
+                    <a href="recipe1.html" class="a23"><h2>  Paneer </h2></a>
+                </div>
+                <div class="items-img-name" data-aos="slide-right">
+                    <img src="a7.jpg" alt="" height="280px" width="210px">
+                    <a href="rec2.html" class="a23"><h2>Pizza </h2></a>
+                </div>
+                <div class="items-img-name" data-aos="slide-left">
+                    <img src="a8.jpg" alt="" height="280px" width="210px">
+                    <a href="rec3.html" class="a23"><h2>Salad</h2></a>
+                </div>
+                <div class="items-img-name" data-aos="slide-left">
+                    <img src="a9.jpg" alt="" height="280px" width="210px">
+                    <a href="rec4.html" class="a23"><h2>Paratha</h2></a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section class="top-chefs">
+        <div class="aaa">
+        <div class="container">
+            <div class="aa">
+            <div class="label">
+                <h1>India's Best Masterchef</h1>
+            </div>
+
+            <div class="top-chef flex">
+                <div class="details" data-aos="slide-right">
+                    <h5>Masterchef Sanjeev Kapoor</h5><br>
+                    <h4>
+                        <p>Masterchef Sanjeev Kapoor is the most celebrated face of Indian cuisine today. He is a chef extraordinaire, runs the successful TV channel ‘FoodFood,’ is the author of bestselling cookbooks, a restaurateur, and the winner of several culinary awards! His recipes, especially the popular recipes by Sanjeev Kapoor, have become household favorites.</p><br>
+                        <p>He is living his dream of making Indian cuisine the number one cuisine in the world and empowering Indian women through the power of cooking to become self-sufficient. Masterchef Sanjeev Kapoor’s recipes are designed to be accessible and inspiring, helping home cooks everywhere create delicious and authentic Indian dishes</p>
+                    </h4>
+                </div>
+                <div class="details-img" data-aos="slide-left">
+                    <img src="https://th.bing.com/th/id/OIP.a6YmlBM8V93evMq-EK05AwHaFj?w=228&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" height="250px" width="300px">
+                </div>
+            </div>  
+
+                <div class="top-chef flex" data-aos="slide-right">
+                    <div class="details-img">
+                        <img src="https://th.bing.com/th/id/OIP.uhQ_WBWi5eNb5OmjWNvFXgAAAA?w=178&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="" height="290px" width="300px">
+                    </div>
+                    <div class="details" data-aos="slide-left">
+                        <h5>Chef Harpal Singh Sokhi</h5><br>
+                        <h4>
+                            <p>Get ready to savor the true flavors of Punjab with Chef Harpal Singh Sokhi! Known for his boundless energy and infectious enthusiasm, Chef Harpal Singh Sokhi brings the essence of Punjab to life in his captivating show. From hearty maa ki daal to comforting makkai di roti, Chef Harpal Singh Sokhi celebrates the rustic and rooted cooking traditions of India with a dash of his signature humor and liveliness.</p><br>
+                            <p>In each episode, Chef Harpal Singh Sokhi takes viewers on a gastronomic journey, sharing the secrets of authentic Indian cuisine with a twist of innovation. With his unique cooking style and ingenious use of ingredients, Chef Harpal Singh Sokhi transforms ordinary dishes into extraordinary culinary delights. It’s a show filled with Namak Shamal (flavorful spices) and oodles of fun, showcasing Chef Harpal Singh Sokhi’s vibrant personality and love for cooking.</p>
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="top-chef flex"  data-aos="slide-right">
+                    <div class="details">
+                        <h5>Chef Amrita Raichand</h5><br>
+                        <h4>
+                            <p>Step into the enchanting world of children’s cuisine with MUMMY KA MAGIC, hosted by the delightful Chef Amrita Raichand. In this 30-minute show, Amrita shares her endearing approach to winning over the hearts and tummies of tiny tots with nutritious yet irresistibly tasty dishes. Chef Amrita’s recipes are specially crafted for children who may fuss while eating, whether out of boredom with their daily meals or a dislike of certain vegetables and foods.</p><br>
+                            <p>As a mother herself, Chef Amrita understands the challenges parents face when it comes to feeding their children nutritiously and deliciously. MUMMY KA MAGIC offers a helping hand to parents who wish to avoid the habit of forcing their fussy kids to eat, providing wholesome meal options that are both nourishing and enticing. Chef Amrita’s recipes feature healthy ingredients such as mushrooms, broccoli, zucchini, and cheese, ensuring that children receive the essential nutrients they need to thrive.</p>
+                        </h4>
+                    </div>
+                    <div class="details-img" data-aos="slide-left">
+                        <!-- <img src="https://www.medianews4u.com/wp-content/uploads/2022/06/VKC-Nuts-ropes-in-Celebrity-Chef-Amrita-Raichand-as-brand-ambassador.jpg" alt="" height="250px" width="300px"> -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK2rbRApe9pQcC-QsX9QqRy4IXicxOR28i_Q&s" alt="" height="330px" width="330px">
+                    </div>
+                </div>
+
+                <div class="top-chef flex "  data-aos="slide-right" >
+                    <div class="details-img">
+                        <!-- <img src="https://th.bing.com/th/id/OIP.-5bloBU_gyiP6ZxxRwwn9gHaEK?rs=1&pid=ImgDetMain" alt="" height="300px" width="330px"> -->
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVcqVeFR0NKNgKjG5uhMAC2D7QPtbazThLNg&s" alt="" height="300px" width="300px">
+                    </div>
+                    <div class="details" data-aos="slide-left">
+                        <h5>Chef Rakhee Vaswani</h5><br>
+                        <h4>
+                            <p>Chef Rakhee Vaswani, known affectionately as the Baking Queen, is a prominent figure in the culinary world, renowned for her expertise in baking and pastry arts. As the proud host of the popular show ‘Bake Diaries,’ Rakhee Vaswani shares her passion for baking with audiences worldwide. Beyond her role on television, Chef Rakhee Vaswani wears many hats in the culinary industry, serving as a celebrity chef, culinary expert, food consultant, teacher, author, and entrepreneur.</p><br>
+                            <p>Through her cooking shows, Chef Rakhee Vaswani shares her wealth of knowledge and expertise, inspiring aspiring bakers to hone their skills and explore the world of baking. As a food consultant, Rakhee Vaswani lends her expertise to various culinary projects, offering valuable insights and guidance to businesses in the food industry. Additionally, as an author, Chef Rakhee Vaswani has penned cookbooks filled with her signature recipes, allowing readers to recreate her delectable creations in their own kitchens.</p>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+    <section class="food-journal">
+        <div class="container" data-aos="slide-up">
+            <div class="label">
+                <h1>Food Journal</h1>
+            </div>
+
+            <div class="journal-item flex">
+
+                <div class="j2" data-aos="zoom-in-up">
+                    <h3>ARTICLE</h3>
+                    <h5>How free are you this Morning!</h5>
+                    <h4>Yes, you heard it right. How free do you feel every morning? Do you feel detoxified enough?</h4>
+                </div>
+                <div class="j1" data-aos="slide-left">
+                    <img src="a10.jpg" alt="" height="180px" width="250px">
+                </div>
+            </div>
+
+            <div class="journal-item flex">
+                <div class="j1" data-aos="slide-right">
+                    <img src="a11.jpg" alt="" height="180px" width="250px">
+                </div>
+                <div class="j2" data-aos="zoom-in-up">
+                    <h3>ARTICLE</h3>
+                    <h5>Crush Garlic to Peel Easily</h5>
+                    <h4>Peeling garlic can be hard at the best of times so here is a tip that will help you peel garlic easily.</h4>
+                </div>
+            </div>
+
+
+
+            <div class="journal-item flex">
+
+                <div class="j2" data-aos="zoom-in-up">
+                    <h3>ARTICLE</h3>
+                    <h5>The Indian Bakery Pastry Market & Trends</h5>
+                    <h4>The Indian Bakery market is estimated to be worth Rs. 16,500 cr, growing at a healthy 7.5 % per annum.</h4>
+                </div>
+                <div class="j1" data-aos="slide-left">
+                    <img src="a12.jpg" alt="" height="180px" width="250px">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container2 flex footer-container" >
+            <a href="#" class="company-logo">
+                <img class="comp" src="a13.png" alt="" height="200px" width="200px">
+            </a>
+             
+            <div class="link-column flex">
+                <h4>Product</h4>
+                <a href="#" class="hover-link flex">Overview</a>
+                <a href="#" class="hover-link">Pricing</a>
+                <a href="#" class="hover-link">Usability</a>
+                <a href="#" class="hover-link">Customer</a>
+                <a href="#" class="hover-link">Status Page</a>
+            </div>
+            <div class="link-column flex">
+                <h4>Product</h4>
+                <a href="#" class="hover-link">Overview</a>
+                <a href="#" class="hover-link">Pricing</a>
+                <a href="#" class="hover-link">Usability</a>
+                <a href="#" class="hover-link">Customer</a>
+                <a href="#" class="hover-link">Status Page</a>
+            </div>
+            <div class="link-column flex">
+                <h4>Product</h4>
+                <a href="#" class="hover-link">Overview</a>
+                <a href="#" class="hover-link">Pricing</a>
+                <a href="#" class="hover-link">Usability</a>
+                <a href="#" class="hover-link">Customer</a>
+                <a href="#" class="hover-link">Status Page</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div class="subfooter">
+        <div class="container2 flex sub-footer-container">
+            <a href="#" class="hover-link">Privacy</a>
+            <a href="#" class="hover-link">Policy</a>
+            <a href="#" class="hover-link">Security Information</a>
+            <a href="#" class="hover-link"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="hover-link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="hover-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="hover-link"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/05ac7aeb8e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js"></script>  
+</body>
+</html>
